@@ -52,8 +52,8 @@ Esta separación permite un código más mantenible, escalable y fácil de teste
 
 Usuarios:
 
-POST /users/login  
-POST /users/register
+- POST /users/login  
+- POST /users/register
 
 Tareas (protegidas con JWT):
 
