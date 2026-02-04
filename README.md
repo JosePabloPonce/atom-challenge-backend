@@ -13,6 +13,28 @@ https://api-ykigm3b4pa-uc.a.run.app/health
 
 ---
 
+## Arquitectura del proyecto
+
+El backend sigue una organización inspirada en Clean Architecture y principios DDD:
+
+- `domain/` contiene entidades principales (User, Task)
+- `repositories/` encapsula el acceso a Firestore de forma desacoplada
+- `middleware/` centraliza autenticación y autorización JWT
+- `routes/` define los endpoints REST expuestos por la API
+
+Esta separación permite un código más mantenible, escalable y fácil de testear.
+
+---
+
+## Buenas prácticas aplicadas
+
+- Middleware JWT reutilizable para proteger rutas
+- Validaciones robustas usando Zod
+- Separación de responsabilidades (principios SOLID)
+- Tipado estricto con TypeScript
+- Acceso a datos desacoplado mediante repositorios
+---
+
 ## Tecnologías utilizadas
 
 - Node.js + Express
@@ -114,17 +136,6 @@ Incluye pruebas básicas:
 Deploy desde la carpeta backend:
 
 firebase deploy --only functions
-
----
-
-## CI/CD
-
-Firebase permite integración automática con GitHub Actions para pipelines de:
-
-- Install
-- Test
-- Build
-- Deploy continuo
 
 ---
 
