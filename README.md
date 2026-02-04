@@ -57,10 +57,10 @@ Usuarios:
 
 Tareas (protegidas con JWT):
 
-GET /tasks  
-POST /tasks  
-PUT /tasks/:id  
-DELETE /tasks/:id
+- GET /tasks  
+- POST /tasks  
+- PUT /tasks/:id  
+- DELETE /tasks/:id
 
 ---
 
